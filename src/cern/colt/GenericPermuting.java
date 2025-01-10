@@ -207,6 +207,7 @@ In other words g[0]<--g[0], g[1]<--g[4], g[2]<--g[1], g[3]<--g[2], g[4]<--g[3].
 @param   swapper an object that knows how to swap two indexes a,b.
 @param   work the working storage, must satisfy <tt>work.length >= indexes.length</tt>; set <tt>work==null</tt> if you don't care about performance.
 */
+@Deprecated
 public static void permute(int[] indexes, cern.colt.Swapper swapper, int[] work) {
 	permute(indexes,swapper,work,null);
 }

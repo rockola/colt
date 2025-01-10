@@ -61,7 +61,7 @@ public Object get(int index) {
  * Transforms an element of a primitive data type to an object. 
  */
 protected static Object object(float element) {
-	return new Float(element);
+	return Float.valueOf(element);
 }
 /**
  * Removes the element at the specified position in this list (optional

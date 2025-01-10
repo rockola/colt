@@ -1017,8 +1017,8 @@ public static void main(String args[]) {
 	//boolean isSparse = args[4].equals("sparse");
 	String kind = args[3];
 	int initialCapacity = Integer.parseInt(args[4]);
-	double minLoadFactor = new Double(args[5]).doubleValue();
-	double maxLoadFactor = new Double(args[6]).doubleValue();
+	double minLoadFactor = Double.valueOf(args[5]).doubleValue();
+	double maxLoadFactor = Double.valueOf(args[6]).doubleValue();
 	boolean print = args[7].equals("print");
 	String type = args[8];
 	String command = args[9];

@@ -264,7 +264,7 @@ public static void main(String[] args) {
 public static void test_B_and_K_Calculation(String[] args) {
 	boolean known_N;
 	if (args==null) known_N = false;
-	else known_N = new Boolean(args[0]).booleanValue();
+	else known_N = Boolean.valueOf(args[0]).booleanValue();
 
 	int[] quantiles = {1,1000};
 	

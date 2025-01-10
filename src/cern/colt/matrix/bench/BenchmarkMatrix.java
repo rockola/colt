@@ -45,10 +45,10 @@ protected static void bench_dgemm(String[] args) {
 		int k = 1;
 		types = new String[] {args[k++]};
 		cpus = Integer.parseInt(args[k++]);
-		minSecs = new Double(args[k++]).doubleValue();
-		densities = new double[] {new Double(args[k++]).doubleValue()};
-		transposeA = new Boolean(args[k++]).booleanValue();
-		transposeB = new Boolean(args[k++]).booleanValue();
+		minSecs = Double.valueOf(args[k++]).doubleValue();
+		densities = new double[] {Double.valueOf(args[k++]).doubleValue()};
+		transposeA = Boolean.valueOf(args[k++]).booleanValue();
+		transposeB = Boolean.valueOf(args[k++]).booleanValue();
 		
 		sizes = new int[args.length - k];
 		for (int i=0; k<args.length; k++, i++) sizes[i] = Integer.parseInt(args[k]);
@@ -81,9 +81,9 @@ protected static void bench_dgemv(String[] args) {
 		int k = 1;
 		types = new String[] {args[k++]};
 		cpus = Integer.parseInt(args[k++]);
-		minSecs = new Double(args[k++]).doubleValue();
-		densities = new double[] {new Double(args[k++]).doubleValue()};
-		transposeA = new Boolean(args[k++]).booleanValue();
+		minSecs = Double.valueOf(args[k++]).doubleValue();
+		densities = new double[] {Double.valueOf(args[k++]).doubleValue()};
+		transposeA = Boolean.valueOf(args[k++]).booleanValue();
 		
 		sizes = new int[args.length - k];
 		for (int i=0; k<args.length; k++, i++) sizes[i] = Integer.parseInt(args[k]);
@@ -116,8 +116,8 @@ protected static void bench_pow(String[] args) {
 		int k = 1;
 		types = new String[] {args[k++]};
 		cpus = Integer.parseInt(args[k++]);
-		minSecs = new Double(args[k++]).doubleValue();
-		densities = new double[] {new Double(args[k++]).doubleValue()};
+		minSecs = Double.valueOf(args[k++]).doubleValue();
+		densities = new double[] {Double.valueOf(args[k++]).doubleValue()};
 		exponent = Integer.parseInt(args[k++]);
 		
 		sizes = new int[args.length - k];
@@ -150,8 +150,8 @@ protected static void benchGeneric(Double2DProcedure fun, String[] args) {
 		int k = 1;
 		types = new String[] {args[k++]};
 		cpus = Integer.parseInt(args[k++]);
-		minSecs = new Double(args[k++]).doubleValue();
-		densities = new double[] {new Double(args[k++]).doubleValue()};
+		minSecs = Double.valueOf(args[k++]).doubleValue();
+		densities = new double[] {Double.valueOf(args[k++]).doubleValue()};
 		
 		sizes = new int[args.length - k];
 		for (int i=0; k<args.length; k++, i++) sizes[i] = Integer.parseInt(args[k]);

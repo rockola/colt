@@ -774,7 +774,7 @@ public AbstractDoubleList times(int times) {
 public java.util.ArrayList toList() {
 	int mySize = size();
 	java.util.ArrayList list = new java.util.ArrayList(mySize);
-	for (int i=0; i < mySize; i++) list.add(new Double(get(i)));
+	for (int i=0; i < mySize; i++) list.add(Double.valueOf(get(i)));
 	return list;
 }
 /**

@@ -110,6 +110,7 @@ public double phi(float element) {
  * Deprecated.
  * Returns the number of bin boundaries.
  */
+@Deprecated
 public int size() {
 	return binBoundaries.length;
 }

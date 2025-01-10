@@ -76,7 +76,7 @@ public static int getMinorVersion() {
  * 
  */
 private static Package getPackage() {
-	return Package.getPackage("cern.colt");
+	return Version.class.getPackage();
 }
 /**
  * Prints <tt>asString</tt> on <tt>System.out</tt>.

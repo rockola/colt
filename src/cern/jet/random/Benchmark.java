@@ -59,8 +59,8 @@ System.out.println(bin);
  */
 public static void main(String args[]) {
 	int size = Integer.parseInt(args[0]);
-	boolean print = new Boolean(args[1]).booleanValue();
-	double mean = new Double(args[2]).doubleValue();
+	boolean print = Boolean.valueOf(args[1]).booleanValue();
+	double mean = Double.valueOf(args[2]).doubleValue();
 	String generatorName = args[3];
 	random(size,print,mean,generatorName);
 }

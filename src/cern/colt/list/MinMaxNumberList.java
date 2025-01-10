@@ -286,6 +286,7 @@ public void trimToSize() {
  * Remark: This does not mean that such a minimum element is currently contained in the receiver.
  * @deprecated
  */
+@Deprecated
 public long xminimum() {
 	return this.minValue;
 }

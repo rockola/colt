@@ -41,6 +41,7 @@ Thus, this class will soon be removed altogether.
 @author wolfgang.hoschek@cern.ch
 @version 1.0, 09/24/99
 */
+@Deprecated
 public class Transform extends cern.colt.PersistentObject {
 	/**
 	 * Little trick to allow for "aliasing", that is, renaming this class.

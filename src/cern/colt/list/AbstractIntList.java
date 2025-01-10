@@ -772,7 +772,7 @@ public AbstractIntList times(int times) {
 public java.util.ArrayList toList() {
 	int mySize = size();
 	java.util.ArrayList list = new java.util.ArrayList(mySize);
-	for (int i=0; i < mySize; i++) list.add(new Integer(get(i)));
+	for (int i=0; i < mySize; i++) list.add(Integer.valueOf(get(i)));
 	return list;
 }
 /**
